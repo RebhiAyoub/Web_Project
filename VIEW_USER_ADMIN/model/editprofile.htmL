@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT PROFILE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--This line links an external CSS file (Bootstrap) to the HTML document, providing styles and layout for the webpage-->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .signup-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 5px;
+            border: 0px solid  rgb(255, 0, 183);
+            border-radius: 20px;
+        }
+        .form-control {
+            margin-bottom: 5px;
+        }
+        body {
+            background: rgb(255, 0, 200);
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, rgb(255, 0, 200), rgb(227, 129, 212));
+            background: -moz-linear-gradient(to top, rgb(255, 0, 200), rgb(227, 129, 212));
+            background: -o-linear-gradient(to top, rgb(255, 0, 200), rgb(227, 129, 212));
+            background: linear-gradient(to top, rgb(255, 0, 200), rgb(227, 129, 212));
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+
+
+    </pre>
+    <h1 style="text-align: center; font-size: 48px; color: rgb(255, 255, 255);"><b><ins>EDIT PROFILE</ins></b></h1>
+    
+    <div class="signup-form">
+        <form>
+            
+            <div class="form-group">
+                <label for="FirstName"></label>
+                <input type="text" class="form-control" id="FirstName" placeholder="FirstName" required>
+            </div>
+            <div class="form-group">
+                <label for="LastName"></label>
+                <input type="text" class="form-control" id="LastName" placeholder="LastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password"></label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="password_confirm"></label>
+                <input type="password" class="form-control" id="password_confirm" placeholder="Password Confirmation" required>
+            </div>
+            <div class="form-group">
+                <label for="dob"></label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="form-group" align="center">
+                <button type="submit" class="bn5" id="btn2" onclick="window.location.href='../index.html'">SAVE</button>
+            </div>
+            
+        </form>
+    </div>
+    <div>
+        <pre style="text-align: center;"><ins>© 2023 SIGN UP form. All rights reserved | Design by Code Crafters</ins></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Apply styles to the form container */
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Style headings */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style labels and inputs */
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style buttons */
+input[type="button"],
+input[type="submit"] {
+    background-color: #0074a2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #005183;
+}
+
+/* Style error and success messages */
+.error-message,
+.success-message {
+    display: inline-block;
+    color: #d9534f; /* Red for error messages */
+    margin-left: 10px;
+}
+
+.success-message {
+    color: #5bc0de; /* Blue for success messages */
+}
+
+/* Apply the background to the body element */
+body {
+    background-image: url('registrationformback.jpeg'); /* Replace 'registrationform.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Apply the background to the registration form section */
+body.registrationform {
+    background-image: url('registrationformback.jpeg'); /* Replace with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.registration-heading {
+    font-size: 24px; /* Adjust the font size */
+    color: #b20909; /* Change the text color */
+    text-align: center; /* Center the text */
+    /* Add any additional styles you want here */
+}
