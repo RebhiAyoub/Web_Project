@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("background2.jpg");
+}
+/* Style the header */
+header {
+    background-color: #db34c5c7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    background-color: #3333335f;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the sections */
+section {
+    padding: 20px;
+
+}
+
+/* Style the footer */
+footer {
+    background-color: #3333335f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.health-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 24px;
+}
+
+.image {
+    flex: 1;
+}
+
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.image-container {
+    width: 30%; /* Set your desired width */
+    height: 30%; /* Set your desired height */
+    overflow: hidden;
+    border-radius: 70%; /* This property creates a circular border */
+    border: 2px solid #ccc; /* Add a border style if needed */
+    position: relative;
+    padding-left: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the circle */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+
+}
+
