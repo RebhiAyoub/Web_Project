@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+    <meta charset="UTF-8">
+    <title>Delivery Date</title>
+    <link rel="stylesheet" href="deliverydate.css">
+</head>
+<body>
+
+<section id="featured-cars" class="wte-ddc-index-hero">
+    <div class="breadcrumb text-center mx-auto col-12">
+        <div class="inner">
+            <a class="category ga-breadcrumb-link" href="../model/tracker.html">Pregnancy Tracker</a>
+            <span>&gt;</span>
+            <a class="category ga-breadcrumb-link" href="/model/deliverydate.html">Delivery Date</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text">
+            Delivery Date Calculator
+        </div>
+        <form action="#" onsubmit="calculateDelivery(event)">
+            <div class="form-row">
+                <div class="input-data" >
+                    <input type="date" required id="lastPeriodDate" style="padding-top: 15px;  padding-left: 10px; color: #800e78;">
+                    <div class="underline"></div>
+                    <label style="padding-top: 10px;" for="lastPeriodDate">First Day Of Last Period</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" required id="cycleLength" style="padding-top: 15px; padding-left: 10px; color: #800e78;" >
+                    <div class="underline"></div>
+                    <label for="cycleLength">Cycle Length (in days)</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea" style="padding-left: 250px; padding-bottom: 50px;" >
+                    <div class="form-row submit-btn" style="margin-top: 10px;">
+                        <div class="input-data">
+                            <div  class="inner"></div>
+                            <input  type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="result"></div>
+        <p style="color: #800e78; font-size: 18px; padding-left:250px;">Save Your Information</p>
+        <a href="http://localhost/carvilla-v1.0/View/model/SaveInfosDelivery.php" style="color: #800e78; font-size: 18px; text-decoration: none; padding-left: 320px;">Here</a>
+        
+    </div>
+    
+</section>
+<script>
+    function calculateDelivery(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Fetching values from form fields
+    const lastPeriodDate = new Date(document.getElementById('lastPeriodDate').value);
+    const cycleLength = parseInt(document.getElementById('cycleLength').value);
+
+    // Calculate the predicted delivery date
+    const predictedDelivery = new Date(lastPeriodDate);
+    predictedDelivery.setMonth(predictedDelivery.getMonth() - 3); // Subtract 3 months
+    predictedDelivery.setFullYear(predictedDelivery.getFullYear() + 1); // Add 1 year
+    predictedDelivery.setDate(predictedDelivery.getDate() + 7); // Add 7 days
+
+    // Display the result
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDueDate = predictedDelivery.toLocaleDateString('en-US', options);
+
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `Predicted Delivery Date: ${formattedDueDate}`;
+}
+
+
+</script>
+
+</body>
+</html>
