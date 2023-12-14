@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sexual Health Forum - Women's Health</title>
+<link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png"/>
+
+<style>
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4; /* Pink color for the title */
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  text-align: center;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff69b4; /* Pink background for the button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.anonymous-question {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.anonymous-question-text {
+  font-size: 14px;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.qa-section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.qa-section h2 {
+  color: #ff69b4;
+}
+
+.qa-post {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.qa-post-author {
+  color: #ff69b4;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Sexual Health Forum - Women's Health</h1>
+  <p style="text-align: center;">A safe space for women to discuss their sexual health and well-being.</p>
+
+  <form action="/action_page.php" method="post">
+    <select name="category">
+      <option value="Sexual Health General">Sexual Health General</option>
+      <option value="Relationships">Relationships</option>
+      <option value="Contraception and Birth Control">Contraception and Birth Control</option>
+      <option value="Sexually Transmitted Infections (STIs)">Sexually Transmitted Infections (STIs)</option>
+      <option value="Sexual Assault and Violence">Sexual Assault and Violence</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <div class="anonymous-question">
+      <input type="text" name="question" placeholder="Enter your question">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="anonymous-question-text">
+    This is an anonymous question. Feel free to ask anything related to women's sexual health.
+  </div>
+
+  <div class="qa-section">
+    <h2>Ask a Specialist</h2>
+    <div class="qa-post">
+      <p><span class="qa-post-author">Specialist123:</span> Welcome to the Ask a Specialist section. Please feel free to ask any questions, and I'll provide expert answers related to women's sexual health.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
